@@ -1,0 +1,1 @@
+{"version":3,"file":"dependency-injection.js","sourceRoot":"","sources":["../src/dependency-injection.ts"],"names":[],"mappings":";;;AACA,yCAA2D;AAE3D,SAAgB,iBAAiB,CAA+B,GAAM,EAAE,cAAgC;IACpG,IAAI,CAAC,cAAc,EAAE;QACjB,cAAc,GAAG,4BAAgB,EAAE,CAAC;KACvC;IACD,OAAO,cAAc,CAAC,OAAO,CAAC,GAAG,CAAC,CAAC;AACvC,CAAC;AALD,8CAKC"}
