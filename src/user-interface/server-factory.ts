@@ -1,6 +1,6 @@
 import express from 'express';
 import * as http from 'http'
-import {Dependencies} from "./container";
+import {Dependencies} from "../container";
 
 import bodyParser = require('body-parser');
 

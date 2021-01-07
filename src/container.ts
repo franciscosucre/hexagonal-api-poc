@@ -1,9 +1,10 @@
 import {AwilixContainer, createContainer, Lifetime} from 'awilix';
 import {infrastructureContainer, InfrastructureDependencies} from "./infrastructure/container";
-import {ServerFactory} from "./server-factory";
-import {routerContainer, RouterDependencies} from "./routers/container";
+import {ServerFactory} from "./user-interface/server-factory";
+import {routerContainer, RouterDependencies} from "./user-interface/routers/container";
 import {serviceContainer, ServiceDependencies} from "./domain/services/container";
 import {useCaseContainer, UseCaseDependencies} from "./domain/usescases/container";
+import {controllerContainer, ControllerDependencies} from "./user-interface/controllers/container";
 
 
 let container: AwilixContainer;
@@ -25,6 +26,7 @@ export function getMainContainer() {
             },
         },
     );
+    container.register(controllerContainer.registrations)
     container.register(routerContainer.registrations)
     container.register(infrastructureContainer.registrations)
     container.register(serviceContainer.registrations)
@@ -35,6 +37,6 @@ export function getMainContainer() {
 
 export type Dependencies = {
     serverFactory: ServerFactory;
-} & InfrastructureDependencies & RouterDependencies & ServiceDependencies & UseCaseDependencies
+} & InfrastructureDependencies & RouterDependencies & ServiceDependencies & UseCaseDependencies & ControllerDependencies
 
 

@@ -1,6 +1,6 @@
 import * as express from 'express';
 import * as joi from 'joi';
-import {CustomError} from "./infrastructure/middleware/error-handling-middleware";
+import {CustomError} from "../infrastructure/middleware/error-handling-middleware";
 
 export const validate = (inputValue: any, schema: joi.ObjectSchema, customOptions: joi.ValidationOptions = {}) => {
     const options: joi.ValidationOptions = Object.assign<joi.ValidationOptions, joi.ValidationOptions>(
