@@ -1,5 +1,5 @@
 import {Dependencies} from "../../container";
-import {HintedValues} from "../../libs/interfaces";
+import {HintedValues} from "../interfaces";
 import {ErrorRequestHandler} from "express";
 
 export enum ErrorCode {

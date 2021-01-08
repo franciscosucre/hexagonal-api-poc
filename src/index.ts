@@ -1,4 +1,4 @@
-import {resolveDependency} from "./libs/dependency-injection";
+import {resolveDependency} from "./infrastructure/dependency-injection";
 
 const serverFactory = resolveDependency('serverFactory')
 

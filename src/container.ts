@@ -17,7 +17,7 @@ export function getMainContainer() {
 
     container.loadModules(
         [
-            `${__dirname}/server-factory!(*.test)*.{ts,js}`,
+            `${__dirname}/user-interface/server-factory!(*.test)*.{ts,js}`,
         ],
         {
             formatName: 'camelCase',
@@ -26,11 +26,11 @@ export function getMainContainer() {
             },
         },
     );
-    container.register(controllerContainer.registrations)
-    container.register(routerContainer.registrations)
     container.register(infrastructureContainer.registrations)
     container.register(serviceContainer.registrations)
     container.register(useCaseContainer.registrations)
+    container.register(controllerContainer.registrations)
+    container.register(routerContainer.registrations)
     return container;
 }
 

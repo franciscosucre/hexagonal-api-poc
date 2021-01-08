@@ -1,6 +1,6 @@
 import express from "express";
 import {Dependencies} from "../../container";
-import {handleRoute} from "../../libs/http";
+import {handleRoute} from "../../infrastructure/http";
 
 
 export default ({mainController, catsRouter}: Dependencies) => {
